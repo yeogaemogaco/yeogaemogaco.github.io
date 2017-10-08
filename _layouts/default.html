@@ -38,34 +38,6 @@
     <meta property="og:image" content="{{ site.url }}{{ site.representing_image }}">
   {% endif %}
 
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107686874-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-107686874-1');
-    gtag('set', {'user_id': 'UA-107686874-1'});
-  </script>
-
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '119621782048682',
-        xfbml      : true,
-        version    : 'v2.10'
-      });
-      FB.AppEvents.logPageView();
-    };
-
-    (function(d, s, id){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
   <link rel="stylesheet" href="/css/styles.css">
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="여개모각코 블로그">
   <link rel="shortcut icon" href="/images/favicon.ico">
@@ -76,6 +48,19 @@
       }
     }
   </style>
+
+  {% if site.google_analytics %}
+  {% include google_analytics.html %}
+  {% endif %}
+
+  {% if site.facebook %}
+  {% include facebook_sdk.html %}
+  {% endif %}
+
+  {% if site.google_plus %}
+  {% include google_plus_sdk.html %}
+  {% endif %}
+
 </head>
 <body>
   <div class="wrapper">
