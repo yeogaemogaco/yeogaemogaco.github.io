@@ -4,28 +4,22 @@ layout: default
 
 {% if page.author %}
 <div class="post-author-info">
-  {% if page.author.email %}
-    <img class="portrait" src="{{site.base_url}}/images/profile/{{page.author.github}}.jpg" />
-    <h1 class="post-title">{{page.title}}</h1>
-    <span class="post-date">{{ page.date | date: "%Y년 %m월 %d일" }}</span>
-    <span class="sep">|</span>
-    <span class="author-name"><a href="mailto:{{page.author.email}}">{{page.author.name}}</a></span>
-  {% else %}
-    <h1 class="post-title">{{page.title}}</h1>
-    <span class="post-date">{{ page.date | date: "%Y년 %m월 %d일" }}</span>
-    <span class="sep">|</span>
-    <span class="author-name">{{page.author.name}}</span>
-
-  {% endif %}
+  <a href="/authors/{{page.author.github}}">
+    <img class="portrait" src="{{site.base_url}}/images/profile/{{page.author.github}}.jpg" /></a>
+  <h1 class="post-title">{{page.title}}</h1>
+  <span class="post-date">{{ page.date | date: "%Y년 %m월 %d일" }}</span>
+  <span class="sep">|</span>
+  <span class="author-name"><a href="/authors/{{page.author.github}}">{{page.author.name}}</a></span>
 </div>
 {% endif %}
 
 {% if page.publish == false %}
-  <div class="post">Coming soon</div>
+<div class="post">Coming soon</div>
 {% else %}
-  <div class="post">{{ content }}</div>
+<div class="post">{{ content }}</div>
 <div class="post">
-  <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+  <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true"
+       data-share="true"></div>
 </div>
 {% endif %}
 <div class="post-footer">

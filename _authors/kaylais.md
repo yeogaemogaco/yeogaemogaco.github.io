@@ -1,5 +1,7 @@
 ---
 name: Kayla
-title: 케일라
+github: kaylais
+title: kaylais
 image: /images/profile/kaylais.jpg
+cover_image: /images/profile/kaylais.jpg
 ---
