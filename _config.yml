@@ -1,0 +1,51 @@
+url: "https://yeogaemogaco.github.io"
+baseurl: ""
+host: 0.0.0.0
+timezone: Asia/Seoul
+facebook_comment: true
+
+repository: yeogaemogaco/yeogaemogaco.github.io
+
+permalink: /:year/:month/:day/:title/
+
+excerpt_separator: <!--more-->
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  highlighter: rouge
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 5
+paginate_path: '/page/:num/'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+
+sass:
+    sass_dir: css
+
+trawler_mode: false
+
+future: true
+
+author: "yeogaemogaco@gmail.com"
+
+github:
+  username: yeogaemogaco
+
+subscribe_rss: /atom.xml

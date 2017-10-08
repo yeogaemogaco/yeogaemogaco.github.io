@@ -1,0 +1,9 @@
+.idea
+/_site/*
+*.swp
+*.swo
+/build/*
+.DS_Store
+.ruby-version
+.sass-cache/
+.jekyll-metadata
