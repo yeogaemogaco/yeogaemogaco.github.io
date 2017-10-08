@@ -49,3 +49,10 @@ github:
   username: yeogaemogaco
 
 subscribe_rss: /atom.xml
+
+google_analytics:
+  ua: UA-107686874-1
+facebook:
+  app_id: '119621782048682'
+  username: kaylabaekis
+  comment: true
