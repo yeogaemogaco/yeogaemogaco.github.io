@@ -20,17 +20,17 @@
   <meta name="description" content="{{ page_description | strip }}">
   <link rel="canonical" href="{{ site.url}}{{ page.url }}">
 
+  <meta property="fb:app_id" content="119621782048682">
+
   <!-- OpenGraph meta tags -->
+  <meta property="og:site_name" content="여개모각코 블로그">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}여개모각코 블로그{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:site_name" content="여개모각코 블로그">
   <meta property="og:description" content="{{ page_description | strip }}">
-  {% if page.url contains 'jobs' %}
-    <meta property="og:type" content="blog">
-  {% elsif page.title %}
+  {% if page.title %}
     <meta property="og:type" content="article">
   {% else %}
-    <meta property="og:type" content="blog">
+    <meta property="og:type" content="website">
   {% endif %}
   {% if page.cover_image %}
     <meta property="og:image" content="{{ site.url }}{{ page.cover_image }}">
