@@ -443,6 +443,13 @@ figcaption {
   border-radius: 50%;
   float: left;
 }
+.email-icon {
+  display: inline-block;
+  background-image: url(/images/email-icon.png);
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
 .twitter-icon {
   display: inline-block;
   background-image: url(/images/twitter-icon.png);

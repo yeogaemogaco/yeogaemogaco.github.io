@@ -1,18 +1,19 @@
 <!doctype html>
-<!--[if lt ie 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if ie 7]>         <html class="lt-ie9 lt-ie8 ie7"> <![endif]-->
-<!--[if ie 8]>         <html class="lt-ie9 ie8"> <![endif]-->
+<!--[if lt ie 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if ie 7]>
+<html class="lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if ie 8]>
+<html class="lt-ie9 ie8"> <![endif]-->
 <!--[if gt ie 8]><!-->
 <html class=""><!--<![endif]-->
 <head>
   {% capture page_description %}
-    {% if page.url contains 'jobs' %}
-  여자개발자모임터 내 모여서 각자 코딩 모임
-    {% elsif page.description %}
-      {{ page.description }}
-    {% else %}
-      여자개발자모임터 내 모여서 각자 코딩 모임
-    {% endif %}
+  {% if page.description %}
+  {{ page.description }}
+  {% else %}
+  여자개발자모임터 내 모여서 각자 코딩 모임, 여개모각코
+  {% endif %}
   {% endcapture %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -20,34 +21,26 @@
   <meta name="description" content="{{ page_description | strip }}">
   <link rel="canonical" href="{{ site.url}}{{ page.url }}">
 
+  <meta property="fb:app_id" content="119621782048682">
   <!-- OpenGraph meta tags -->
+  <meta property="og:site_name" content="여개모각코 블로그">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}여개모각코 블로그{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:site_name" content="여개모각코 블로그">
   <meta property="og:description" content="{{ page_description | strip }}">
-  {% if page.url contains 'jobs' %}
-    <meta property="og:type" content="blog">
-  {% elsif page.title %}
-    <meta property="og:type" content="article">
+  {% if page.title %}
+  <meta property="og:type" content="article">
   {% else %}
-    <meta property="og:type" content="blog">
+  <meta property="og:type" content="website">
   {% endif %}
   {% if page.cover_image %}
-    <meta property="og:image" content="{{ site.url }}{{ page.cover_image }}">
+  <meta property="og:image" content="{{ site.url }}{{ page.cover_image }}">
   {% else %}
-    <meta property="og:image" content="{{ site.url }}{{ site.cover_image }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.cover_image }}">
   {% endif %}
 
   <link rel="stylesheet" href="/css/styles.css">
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="여개모각코 블로그">
   <link rel="shortcut icon" href="/images/favicon.ico">
-  <style type="text/css">
-    @media only screen and (max-width: 580px) {
-      .btn-job {
-        display: none;
-      }
-    }
-  </style>
 
   {% if site.google_analytics %}
   {% include google_analytics.html %}
@@ -63,77 +56,68 @@
 
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <div class="header-item">
-        <div class="spoqa-logo-wrap">
-          <a class="spoqa-logo" href="/"><img src="/images/logo.png" alt="Yeogaemogaco logo"></a>
-          <!--<a class="blog-title" href="/">블로그</a>-->
-        </div>
-        <div class="nav">
-          <input type="checkbox" id="toggle">
-          <label for="toggle" class="toggle" onclick></label>
-          <ul class="menu">
-            {% assign url_left6 = page.url|slice: 0, 6 %}
-            <li><a class="
+<div class="wrapper">
+  <div class="header">
+    <div class="header-item">
+      <div class="spoqa-logo-wrap">
+        <a class="spoqa-logo" href="/"><img src="/images/logo.png" alt="여개모각코 로코"></a>
+      </div>
+      <div class="nav">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="toggle" onclick></label>
+        <ul class="menu">
+          {% assign url_left6 = page.url|slice: 0, 6 %}
+          <li><a class="
               {% if page.url == '/about/' %}
               selected
               {% endif %} menu-about" href="/about/">소개</a></li>
-            <li><a class="
+          <li><a class="
               {% if page.url != '/about/' and page.url != '/jobs/' and url_left6 != '/jobs/' %}
               selected
               {% endif %} menu-blog" href="/">블로그</a></li>
-            <li><a class="menu-github" href="https://github.com/yeogaemogaco">GitHub</a></li>
-            {% if site.trawler_mode %}
-            <li><a class="
+          <li><a class="menu-github" href="https://github.com/yeogaemogaco">GitHub</a></li>
+          {% if site.trawler_mode %}
+          <li><a class="
               {% if page.url == '/jobs/' or url_left6 == '/jobs/' %}
               selected
               {% endif %} menu-job" href="/jobs">채용정보</a></li>
-            {% endif %}
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      {{ content }}
-    </div>
-    <div class="push">
-    </div>
-    <div class="footer">
-      <div id="info">
-        <span>© <a href="https://yeogaemogaco.github.io/">Yeogaemogaco</a> Inc. All rights reserved.</span>
-        <span>Powered by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+          {% endif %}
+        </ul>
       </div>
     </div>
   </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/js/highlight.pack.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-    $(function() {
-      $('.hiring-banner').bind("click", function() {
-        location.href = '/jobs.html';
-      });
-      $('.toggle').bind("touchstart", function() {
-        $('.menu').toggle();
-      })
-    });
-  </script>
-  <!-- Responsive layout polyfill for IE8 and lower -->
-  <!--[if lte IE 8]>
-  <script>
-    var config = {
-        mobileResponsiveBreakpoint: 650
-    };
-    $(window).on('resize', function(){
-        if ($(window).width() <= config.mobileResponsiveBreakpoint) {
-           !$(document.body).hasClass('res-mobile')) {
-            $(document.body).addClass('res-mobile');
-        } else {
-            $(document.body).removeClass('res-mobile');
-        }
-    }).trigger('resize');
-  </script>
-  <![endif]-->
+  <div class="content">
+    {{ content }}
+  </div>
+  <div class="push">
+  </div>
+  <div class="footer">
+    <div id="info">
+      <span>© <a href="https://yeogaemogaco.github.io/">Yeogaemogaco</a> All rights reserved.</span>
+      <span>Powered by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+    </div>
+  </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Responsive layout polyfill for IE8 and lower -->
+<!--[if lte IE 8]>
+<script>
+  var config = {
+    mobileResponsiveBreakpoint: 650
+  };
+  $(window).on('resize', function () {
+    if ($(window).width() <= config.mobileResponsiveBreakpoint) {
+      !$(document.body).hasClass('res-mobile')
+    )
+  {
+    $(document.body).addClass('res-mobile');
+  }
+  else
+  {
+    $(document.body).removeClass('res-mobile');
+  }
+  }).trigger('resize');
+</script>
+<![endif]-->
 </body>
 </html>
