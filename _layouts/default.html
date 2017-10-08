@@ -94,18 +94,17 @@
           <ul class="menu">
             {% assign url_left6 = page.url|slice: 0, 6 %}
             <li><a class="
-              {% if page.url == '/about' %}
+              {% if page.url == '/about/' %}
               selected
               {% endif %} menu-about" href="/about/">소개</a></li>
             <li><a class="
-              {% if page.url != '/about' and page.url != '/jobs' and
-                    url_left6 != '/jobs/' %}
+              {% if page.url != '/about/' and page.url != '/jobs/' and url_left6 != '/jobs/' %}
               selected
               {% endif %} menu-blog" href="/">블로그</a></li>
             <li><a class="menu-github" href="https://github.com/yeogaemogaco">GitHub</a></li>
             {% if site.trawler_mode %}
             <li><a class="
-              {% if page.url == '/jobs' or url_left6 == '/jobs/' %}
+              {% if page.url == '/jobs/' or url_left6 == '/jobs/' %}
               selected
               {% endif %} menu-job" href="/jobs">채용정보</a></li>
             {% endif %}
