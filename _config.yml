@@ -1,6 +1,5 @@
-url: "https://yeogaemogaco.github.io"
-baseurl: ""
-host: 0.0.0.0
+url: https://yeogaemogaco.github.io
+baseurl: ''
 timezone: Asia/Seoul
 
 repository: yeogaemogaco/yeogaemogaco.github.io
