@@ -2,7 +2,6 @@ url: "https://yeogaemogaco.github.io"
 baseurl: ""
 host: 0.0.0.0
 timezone: Asia/Seoul
-facebook_comment: true
 
 repository: yeogaemogaco/yeogaemogaco.github.io
 
@@ -52,7 +51,7 @@ subscribe_rss: /atom.xml
 
 google_analytics:
   ua: UA-107686874-1
+
 facebook:
   app_id: '119621782048682'
-  username: kaylabaekis
   comment: true
