@@ -126,7 +126,7 @@ a.footnote {
 .header {
   height: 60px;
   padding: 0 5%;
-  background-color: #fff;
+  background-color: #50bc5c;
   border-bottom: 1px solid $divider-color;
 }
 .header-item {
@@ -199,10 +199,9 @@ a.footnote {
 
   a {
     padding: 19px 20px 15px;
-    color: $grey-text-color;
+    color: #fff;
     display: block;
     font-size: 14px;
-    color: $grey-5;
     @media only screen and (max-width: 580px) {
       font-size: 17px;
       color: $text-color;
@@ -212,13 +211,13 @@ a.footnote {
     &:active,
     &.selected {
       -webkit-transition: 0.2s ease-out all;
-      font-weight: 700;
-      color: $text-color;
+      font-weight: 900;
+      color: #fff;
     }
     &:focus,
     &:hover {
       -webkit-transition: 0.2s ease-out all;
-      color: $text-color;
+      color: #fff;
     }
   }
 }
