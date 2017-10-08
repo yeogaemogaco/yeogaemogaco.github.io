@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div id="content" class="container">
+  <div id="author-content" role="main">
+    <ul id="post-list">
+      {% for post in site.posts %}
+      {% if post.author == page.author.name %}
+      {% include item.html %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

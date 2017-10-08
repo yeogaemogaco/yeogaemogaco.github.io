@@ -1,0 +1,12 @@
+version: "3"
+services:
+  site:
+    command: jekyll serve --incremental
+    image: jekyll/builder
+    volumes:
+    - $PWD:/srv/jekyll
+    ports:
+    - 4000:4000
+    - 35729:35729
+    - 3000:3000
+    - 80:4000
