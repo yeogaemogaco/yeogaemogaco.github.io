@@ -54,3 +54,5 @@ google_analytics:
 facebook:
   app_id: '119621782048682'
   comment: true
+
+cover_image: /images/cover.jpg
