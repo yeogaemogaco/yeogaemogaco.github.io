@@ -7,11 +7,11 @@
 <head>
   {% capture page_description %}
     {% if page.url contains 'jobs' %}
-      스포카에서 상점을 위한 IT 서비스를 디자인하고 개발할 크리에이터를 찾고 있습니다.
+  여자개발자모임터 내 모여서 각자 코딩 모임
     {% elsif page.description %}
       {{ page.description }}
     {% else %}
-      스포카 크리에이터의 경험과 배움을 공유합니다.
+      여자개발자모임터 내 모여서 각자 코딩 모임
     {% endif %}
   {% endcapture %}
   <meta charset="utf-8">
@@ -38,29 +38,33 @@
     <meta property="og:image" content="{{ site.url }}{{ site.representing_image }}">
   {% endif %}
 
-  <!-- Twitter card meta tags -->
-  <!--<meta name="twitter:card" content="summary_large_image">-->
-  <!--<meta name="twitter:site" content="@spoqa">-->
-  <!--<meta name="twitter:title" content="{% if page.title %}{{page.title}}{% else %}여개모각코 블로그{% endif %}">-->
-  <!--<meta name="twitter:description" content="{{ page_description | strip }}">-->
-  <!--{% if page.representing_image %}-->
-    <!--<meta name="twitter:image" content="{{ site.url }}{{ page.representing_image }}">-->
-  <!--{% else %}-->
-    <!--<meta name="twitter:image" content="{{ site.url }}{{ site.twitter_image }}">-->
-  <!--{% endif %}-->
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107686874-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-107686874-1');
+    gtag('set', {'user_id': 'UA-107686874-1'});
+  </script>
 
   <script>
-    (function(d) {
-        var wf = d.createElement('script'), s = d.scripts[0];
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-        s.parentNode.insertBefore(wf, s);
-    })(document);
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-36136046-5', 'auto');
-    ga('send', 'pageview');
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '119621782048682',
+        xfbml      : true,
+        version    : 'v2.10'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>
   <link rel="stylesheet" href="/css/styles.css">
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="여개모각코 블로그">
