@@ -32,10 +32,10 @@
   {% else %}
     <meta property="og:type" content="blog">
   {% endif %}
-  {% if page.representing_image %}
-    <meta property="og:image" content="{{ site.url }}{{ page.representing_image }}">
+  {% if page.cover_image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.cover_image }}">
   {% else %}
-    <meta property="og:image" content="{{ site.url }}{{ site.representing_image }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.cover_image }}">
   {% endif %}
 
   <link rel="stylesheet" href="/css/styles.css">
