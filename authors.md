@@ -1,10 +1,11 @@
 ---
-layout: author
+layout: default
 title: Authors
 permalink: /authors/
 sitemap:
   priority: 0.7
 ---
+
 {% for author in site.authors %}
-* [{{ author.name }}]({{ site.baseurl }}/authors/{{ author.name }}/)
+* <img src="/images/profile/{{author.github}}.jpg" width="25px"> [{{ author.name }}]({{ site.baseurl }}/authors/{{ author.github }}/)
 {% endfor %}
