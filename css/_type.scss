@@ -70,8 +70,11 @@ body {
 // Heading
 // --------------------------------------------------------------------------
 
+.content>h1, .content>h2, .content>h3, .content>h4, .content>h5, .content>h6 {
+  border-bottom: 0.01em solid #eee;
+}
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 2.5em;
+  margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -102,7 +105,7 @@ h6 { font-size: 16px; color: $grey-6; font-weight: bold; } // FIXME: 추후에�
 // --------------------------------------------------------------------------
 
 p {
-  margin: 0 0 0.5em;
+  margin: 0;
   font-size: $blog-font-size-base;//테크블로그 기본 폰트 사이즈를 설정했습니다.
 }
 

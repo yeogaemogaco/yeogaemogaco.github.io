@@ -4,7 +4,7 @@ timezone: Asia/Seoul
 
 repository: yeogaemogaco/yeogaemogaco.github.io
 
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:year/:month/:day/:title/
 
 excerpt_separator: <!--more-->
 
@@ -26,6 +26,12 @@ collections:
   authors:
     output: true
     permalink: /authors/:path/
+  notice:
+    output: true
+    permalink: /notice/:year/:month/:day/:title/
+  teams:
+    output: true
+    permalink: /teams/:title/
 
 defaults:
   - scope:
