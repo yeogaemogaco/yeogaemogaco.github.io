@@ -14,7 +14,7 @@ $full-container-bg:             #fff;
 
 $font-size-base:                14px;
 $font-size-adjust:              15px;
-$blog-font-size-base:			17px;
+$blog-font-size-base:			      15px;
 $font-size-lg:                  22px;
 $font-size-sm:                  11px;
 $blog-font-size-lg:				32px;
@@ -23,8 +23,8 @@ $font-size-jp:                  15px;
 
 $text-color:                    $grey-7;
 $grey-text-color:               $grey-5;
-$font-family-base:              'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
-$font-family-jp:                'Spoqa Han Sans JP', 'Spoqa Han Sans', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+$font-family-base:              sans-serif, 'Kakao', 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum;
+$font-family-jp:                sans-serif, 'Kakao', 'Spoqa Han Sans JP', 'Spoqa Han Sans', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum;
 
 $line-height-base:              1.5em;
 $line-height-jp:                1.6em;

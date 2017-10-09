@@ -10,17 +10,22 @@
 @import url(//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css);
 
 // Typekit Font loader attrs
-.wf-loading body {
-  font-family: "Apple SD Gothic Neo", "Nanum Barun Gothic", "Nanum Gothic", Verdana, Arial, "Malgun Gothic", Dotum, sans-serif;
-}
+// Typekit Font loader attrs
+//.wf-loading body {
+//  font-family: "Apple SD Gothic Neo", "Nanum Barun Gothic", "Nanum Gothic", Verdana, Arial, "Malgun Gothic", Dotum, sans-serif;
+//}
 
 .hljs {
   background: $grey-highlight-color;
 }
+
+.content ul {
+  margin-left: 40px;
+}
 .content,
 .footer {
   width: 90%;
-  max-width: 700px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 3% 5%;

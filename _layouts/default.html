@@ -32,13 +32,21 @@
   {% else %}
   <meta property="og:type" content="website">
   {% endif %}
+
   {% if page.cover_image %}
+  {% assign imagePath = page.cover_image|slice: 0, 4 %}
+  {% if imagePath == 'http' %}
+  <meta property="og:image" content="{{ page.cover_image }}">
+  {% else %}
   <meta property="og:image" content="{{ site.url }}{{ page.cover_image }}">
+  {% endif %}
   {% else %}
   <meta property="og:image" content="{{ site.url }}{{ site.cover_image }}">
   {% endif %}
+  <meta name="google-site-verification" content="Q5w5X0R32gOG-1lBhFg0UxvXRNoQX-uOSPjxPI4sXH4" />
 
   <link rel="stylesheet" href="/css/styles.css">
+  <link href="/assets/fonts/Kakao.css" rel="stylesheet" type="text/css"/>
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="여개모각코 블로그">
   <link rel="shortcut icon" href="/images/favicon.ico">
 
@@ -67,21 +75,19 @@
         <label for="toggle" class="toggle" onclick></label>
         <ul class="menu">
           {% assign url_left6 = page.url|slice: 0, 6 %}
+          <!--<li><a class="-->
+              <!--{% if url_left6 == '/notic' %}-->
+              <!--selected-->
+              <!--{% endif %} menu-notice" href="/notice/2017/10/09/read-me/">공지</a></li>-->
           <li><a class="
-              {% if page.url == '/about/' %}
+              {% if url_left6 == '/about' or url_left6 == '/teams' %}
               selected
               {% endif %} menu-about" href="/about/">소개</a></li>
           <li><a class="
-              {% if page.url != '/about/' and page.url != '/jobs/' and url_left6 != '/jobs/' %}
+              {% if url_left6 != '/about' and url_left6 != '/notic' and url_left6 != '/teams'%}
               selected
               {% endif %} menu-blog" href="/">블로그</a></li>
-          <li><a class="menu-github" href="https://github.com/yeogaemogaco">GitHub</a></li>
-          {% if site.trawler_mode %}
-          <li><a class="
-              {% if page.url == '/jobs/' or url_left6 == '/jobs/' %}
-              selected
-              {% endif %} menu-job" href="/jobs">채용정보</a></li>
-          {% endif %}
+          <li><a class="menu-github" href="https://github.com/yeogaemogaco" target="_blank">GitHub</a></li>
         </ul>
       </div>
     </div>
@@ -93,8 +99,8 @@
   </div>
   <div class="footer">
     <div id="info">
-      <span>© <a href="https://yeogaemogaco.github.io/">Yeogaemogaco</a> All rights reserved.</span>
-      <span>Powered by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+      <span>© <a href="https://yeogaemogaco.github.io/" target="_blank">Yeogaemogaco</a> All rights reserved.</span>
+      <span>Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</span>
     </div>
   </div>
 </div>
