@@ -1,0 +1,123 @@
+<!doctype html>
+<!--[if lt ie 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if ie 7]>
+<html class="lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if ie 8]>
+<html class="lt-ie9 ie8"> <![endif]-->
+<!--[if gt ie 8]><!-->
+<html class=""><!--<![endif]-->
+<head>
+  {% capture page_description %}
+  {% if page.description %}
+  {{ page.description }}
+  {% else %}
+  여자개발자모임터 내 모여서 각자 코딩 모임, 여개모각코
+  {% endif %}
+  {% endcapture %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>여개모각코 블로그{% if page.title %} | {{ page.title }}{% endif %}</title>
+  <meta name="description" content="{{ page_description | strip }}">
+  <link rel="canonical" href="{{ site.url}}{{ page.url }}">
+
+  <meta property="fb:app_id" content="358962837867374">
+  <!-- OpenGraph meta tags -->
+  <meta property="og:site_name" content="여개모각코 블로그">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}여개모각코 블로그{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:description" content="{{ page_description | strip }}">
+  {% if page.title %}
+  <meta property="og:type" content="article">
+  {% else %}
+  <meta property="og:type" content="website">
+  {% endif %}
+
+  {% if page.cover_image %}
+  {% assign imagePath = page.cover_image|slice: 0, 4 %}
+  {% if imagePath == 'http' %}
+  <meta property="og:image" content="{{ page.cover_image }}">
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}{{ page.cover_image }}">
+  {% endif %}
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}{{ site.cover_image }}">
+  {% endif %}
+  <meta name="google-site-verification" content="Q5w5X0R32gOG-1lBhFg0UxvXRNoQX-uOSPjxPI4sXH4" />
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="/assets/fonts/Kakao.css" rel="stylesheet" type="text/css"/>
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="여개모각코 블로그">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+
+  {% if site.google_analytics %}
+  {% include google_analytics.html %}
+  {% endif %}
+
+  {% if site.facebook %}
+  {% include facebook_sdk.html %}
+  {% endif %}
+
+  {% if site.google_plus %}
+  {% include google_plus_sdk.html %}
+  {% endif %}
+
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="header">
+    <a class="brand" href="/"><img src="/images/logo.png" class="brand-logo" alt="여개모각코 로코"></a>
+    <nav>
+      {% assign url_left6 = page.url|slice: 0, 6 %}
+      <!--<li><a class="-->
+      <!--{% if url_left6 == '/notic' %}-->
+      <!--selected-->
+      <!--{% endif %} menu-notice" href="/notice/2017/10/09/read-me/">공지</a></li>-->
+      <a class="
+              {% if url_left6 == '/about' or url_left6 == '/teams' %}
+              selected
+              {% endif %} menu-about" href="/about/">소개</a>
+      <a class="
+              {% if url_left6 != '/about' and url_left6 != '/notic' and url_left6 != '/teams'%}
+              selected
+              {% endif %} menu-blog" href="/">블로그</a>
+      <a class="menu-github" href="https://github.com/yeogaemogaco" target="_blank">GitHub</a>
+    </nav>
+    </div>
+  </header>
+  <div class="content">
+    {{ content }}
+  </div>
+  <div class="push">
+  </div>
+  <div class="footer">
+    <div id="info">
+      <span>© <a href="https://yeogaemogaco.github.io/" target="_blank">Yeogaemogaco</a> All rights reserved.</span>
+      <span>Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</span>
+    </div>
+  </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Responsive layout polyfill for IE8 and lower -->
+<!--[if lte IE 8]>
+<script>
+  var config = {
+    mobileResponsiveBreakpoint: 650
+  };
+  $(window).on('resize', function () {
+    if ($(window).width() <= config.mobileResponsiveBreakpoint) {
+      !$(document.body).hasClass('res-mobile')
+    )
+  {
+    $(document.body).addClass('res-mobile');
+  }
+  else
+  {
+    $(document.body).removeClass('res-mobile');
+  }
+  }).trigger('resize');
+</script>
+<![endif]-->
+</body>
+</html>
