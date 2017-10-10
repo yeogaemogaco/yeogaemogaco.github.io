@@ -24,11 +24,13 @@
 }
 .content,
 .footer {
-  width: 90%;
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 3% 5%;
+}
+
+.content {
+  padding: 2% 0;
 }
 
 .spoqa_intro {
@@ -94,6 +96,7 @@ p code, pre code, li code, code {
 
 pre {
   border-radius: 4px;
+  max-width: 960px;
 }
 
 // footnote
@@ -129,13 +132,10 @@ a.footnote {
 
 // header
 .header {
-  height: 60px;
   padding: 0 5%;
-  background-color: #50bc5c;
-  border-bottom: 1px solid $divider-color;
 }
 .header-item {
-  max-width: 700px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -260,10 +260,11 @@ a.footnote {
 }
 .posts li {
   border-bottom: 1px solid $divider-color;
-  padding: 8% 0;
+  padding: 4% 0;
 }
 .list-type-none {
   list-style: none;
+  margin-left: 0 !important;
 }
 
 /* pagination */
@@ -355,7 +356,7 @@ figcaption {
   text-align: center;
 
  .portrait {
-    width: 17%;
+    width: 10%;
     vertical-align: middle;
     border-radius: 50%;
   }
@@ -610,6 +611,36 @@ figcaption {
   h1 { 
     font-size: 36px; 
   }
+
+  header {
+    height: 80px !important;
+  }
+
+  header .brand {
+    width: 100%;
+    clear: left;
+    text-align: center;
+    padding-top: 1em;
+    float: none;
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav a {
+    padding: 5px 10px !important;
+  }
+
+  .content, .footer {
+     padding: 25px;
+  }
+
+  .list-type-none li {
+    padding: 8% 0;
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -622,9 +653,6 @@ figcaption {
   }
   p {
     font-size: 16px;
-  }
-  .header {
-    height: 60px;
   }
   .toggle {
     display: block;
@@ -693,6 +721,9 @@ figcaption {
   }
   .back-btn a {
     padding: 20px 25%;
+  }
+  .list-type-none li {
+    padding: 8% 0;
   }
 }
 
@@ -870,4 +901,43 @@ figcaption {
       max-width: 308px;
     }
   }
+}
+
+header {
+  margin: auto;
+  width: 80%;
+  height: 50px;
+  background-color: #50bc5c;
+  padding: 0 10% 0 10%;
+  border-bottom: 1px solid #e1e4e6;
+}
+
+header .brand {
+  float: left;
+  padding-top: 12px;
+  display: block;
+}
+
+header .brand-logo {
+  height: 25px;
+}
+
+header nav {
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+nav a {
+  display: inline-block;
+  padding: 16px 10px 10px;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a.selected {
+  -webkit-transition: 0.2s ease-out all;
+  font-weight: 900;
+  color: #fff;
 }
