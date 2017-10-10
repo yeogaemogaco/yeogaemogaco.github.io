@@ -65,33 +65,27 @@
 </head>
 <body>
 <div class="wrapper">
-  <div class="header">
-    <div class="header-item">
-      <div class="spoqa-logo-wrap">
-        <a class="spoqa-logo" href="/"><img src="/images/logo.png" alt="여개모각코 로코"></a>
-      </div>
-      <div class="nav">
-        <input type="checkbox" id="toggle">
-        <label for="toggle" class="toggle" onclick></label>
-        <ul class="menu">
-          {% assign url_left6 = page.url|slice: 0, 6 %}
-          <!--<li><a class="-->
-              <!--{% if url_left6 == '/notic' %}-->
-              <!--selected-->
-              <!--{% endif %} menu-notice" href="/notice/2017/10/09/read-me/">공지</a></li>-->
-          <li><a class="
+  <header>
+    <div class="header">
+    <a class="brand" href="/"><img src="/images/logo.png" class="brand-logo" alt="여개모각코 로코"></a>
+    <nav>
+      {% assign url_left6 = page.url|slice: 0, 6 %}
+      <!--<li><a class="-->
+      <!--{% if url_left6 == '/notic' %}-->
+      <!--selected-->
+      <!--{% endif %} menu-notice" href="/notice/2017/10/09/read-me/">공지</a></li>-->
+      <a class="
               {% if url_left6 == '/about' or url_left6 == '/teams' %}
               selected
-              {% endif %} menu-about" href="/about/">소개</a></li>
-          <li><a class="
+              {% endif %} menu-about" href="/about/">소개</a>
+      <a class="
               {% if url_left6 != '/about' and url_left6 != '/notic' and url_left6 != '/teams'%}
               selected
-              {% endif %} menu-blog" href="/">블로그</a></li>
-          <li><a class="menu-github" href="https://github.com/yeogaemogaco" target="_blank">GitHub</a></li>
-        </ul>
-      </div>
+              {% endif %} menu-blog" href="/">블로그</a>
+      <a class="menu-github" href="https://github.com/yeogaemogaco" target="_blank">GitHub</a>
+    </nav>
     </div>
-  </div>
+  </header>
   <div class="content">
     {{ content }}
   </div>
