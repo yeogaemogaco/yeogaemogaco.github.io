@@ -242,7 +242,7 @@ a.footnote {
 
 .sep {
   color: $grey-text-color;
-  margin: 0 5px;
+  margin: 0 0 0 5px;
 }
 
 /* blog list */
@@ -252,7 +252,7 @@ a.footnote {
   text-align: left;
 }
 .posts .post-author-info .portrait {
-  width: 68px;
+  width: 85px;
   vertical-align: middle;
   border-radius: 50%;
   float: right;
@@ -362,7 +362,7 @@ figcaption {
   }
  .author-name a,
  .author-name {
-    color: $grey-text-color;
+    color: $text-color;
   }
 }
 .post-date {
