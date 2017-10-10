@@ -19,8 +19,9 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-  font-family: 'Kakao', 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serife;
-	font-size: 100%;
+  font-family: 'Kakao', Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serife;
+  font-weight: lighter;
+  font-size: 100%;
 	font: inherit;
 }
 /* HTML5 display-role reset for older browsers */
@@ -62,7 +63,8 @@ body {
   background-color: #fff;
   width: 100%;
   height: 100%;
-  font-family: sans-serif, 'Kakao', 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum;
+  font-family: 'Kakao', Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serife;
+  font-weight: lighter;
   color: $text-color;
   word-break: keep-all;
   -webkit-font-smoothing: antialiased;
