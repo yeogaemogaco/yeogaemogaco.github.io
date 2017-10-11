@@ -6,6 +6,9 @@
       version    : 'v2.10'
     });
     FB.AppEvents.logPageView();
+    FB.Event.subscribe('edge.create', function(url) {
+      ga('send', 'social', 'facebook', 'like', url);
+    });
   };
 
   (function(d, s, id){
