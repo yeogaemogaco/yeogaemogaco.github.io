@@ -3,13 +3,20 @@ layout: default
 ---
 
 {% if page.author %}
+{% for author in site.authors %}
+{% if author.github == page.author.github %}
+{% assign authorName = author.name %}
+{% break %}
+{% endif %}
+{% endfor %}
+
 <div class="post-author-info">
   <a href="/authors/{{page.author.github}}">
     <img class="portrait" src="{{site.base_url}}/images/profile/{{page.author.github}}.jpg" /></a>
   <h1 class="post-title">{{page.title}}</h1>
   <span class="post-date">{{ page.date | date: "%Y년 %m월 %d일" }}</span>
   <span class="sep">by</span>
-  <span class="author-name"><a href="/authors/{{page.author.github}}">{{page.author.name}}</a></span>
+  <span class="author-name"><a href="/authors/{{page.author.github}}">{{authorName}}</a></span>
 </div>
 {% endif %}
 

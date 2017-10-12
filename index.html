@@ -8,7 +8,12 @@ layout: default
         {% if post.publish != false %}
         <li class="post-item">
           {% if post.author %}
-
+          {% for author in site.authors %}
+            {% if author.github == post.author.github %}
+              {% assign authorName = author.name %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
           <div class="post-author-info">
             <a href="/authors/{{post.author.github}}">
               <img class="portrait" src="{{ site.base_url }}/images/profile/{{post.author.github}}.jpg" /></a>
@@ -16,7 +21,7 @@ layout: default
               <p class="post-description">{% if post.description %}{{ post.description }}&nbsp; {% endif %}{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
               <span class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</span>
               <span class="sep">by</span>
-            <span class="author-name"><a href="/authors/{{post.author.github}}">{{post.author.name}}</a></span>
+            <span class="author-name"><a href="/authors/{{post.author.github}}">{{authorName}}</a></span>
           </div>
         {% endif %}
 
