@@ -2,19 +2,43 @@
 layout: default
 ---
 
-<div>
-  <img src="{{page.image}}" width="200px">
-  <p>All Posts by <em>{{ page.name }}</em></p>
-</div>
+<div class="content">
 
-<div id="content" class="container">
-  <div id="author-content" role="main">
-    <ul>
-    {% for post in site.posts %}
-    {% if post.author.github == page.title and post.publish %}
-    <li><a href="{{post.url}}">{{post.title}} <span class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</span></a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
+  <div class="post-author-info">
+    <a href="/authors/{{page.github}}">
+      <img class="portrait" src="{{page.cover_image}}"></a>
+    <h1 class="post-title">All Posts by {{ page.name }}</h1>
+    <div class="authors author-info author-bio-clear">
+      <span class="sns">
+        {% if page.email %}
+        <a class="email-icon" href="mailto:{{page.email}}"></a>
+        {% endif %}
+        {% if page.github %}
+        <a class="github-icon" href="https://github.com/{{page.github}}"></a>
+        {% endif %}
+        {% if page.homepage %}
+        <a class="homepage-icon" href="{{page.homepage}}" target="_blank"></a>
+        {% endif %}
+        {% if page.sns %}
+        <a class="facebook-icon" href="{{page.sns}}" target="_blank"></a>
+        {% endif %}
+      </span>
+      <p class="descrption">{{page.bio}}</p>
+    </div>
   </div>
+
+  <div class="post">
+    <div id="author-content" role="main">
+      <ul>
+        {% for post in site.posts %}
+        {% if post.author.github == page.github and post.publish %}
+        <li><a href="{{post.url}}">{{post.title}} <span class="post-date"> {{ post.date | date: "%Y년 %m월 %d일" }}</span></a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+
+
 </div>
