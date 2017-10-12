@@ -86,9 +86,11 @@
     </nav>
     </div>
   </header>
-  <div class="content">
-    {{ content }}
-  </div>
+  {% if page.publish == false %}
+  <div class="content">Coming soon</div>
+  {% else %}
+  <div class="content">{{ content }}</div>
+  {% endif %}
   <div class="push">
   </div>
   <div class="footer">
