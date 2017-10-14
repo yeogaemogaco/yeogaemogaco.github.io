@@ -8,9 +8,3 @@ bio: "혼자서는 안하니까, 함께하고 싶어서 만든 여개모각코. 
 cover_image: /images/profile/kaylais.jpg
 teams: [1st, 2nd]
 ---
-
-
-토마스 - 
-보   댕 - http://www.elliekwon.com 
-닉   이 - 
-햇   반 - 
