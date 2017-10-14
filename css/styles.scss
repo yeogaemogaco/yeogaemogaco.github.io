@@ -953,3 +953,18 @@ nav a.selected {
 .authors.author-info.author-bio-clear {
   margin-left: 0;
 }
+
+.content iframe, figure {
+  margin: 1em 40px;
+}
+
+.content .post figure figcaption {
+  margin: -25px 0 30px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+iframe {
+  max-width: 85% !important;
+}
