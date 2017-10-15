@@ -968,3 +968,13 @@ nav a.selected {
 iframe {
   max-width: 85% !important;
 }
+
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post.sns-like {
+  margin-top: 100px;
+}
