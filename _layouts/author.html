@@ -6,7 +6,6 @@ teamlabels:
 ---
 
 <div class="content">
-
   <div class="post-author-info">
     <a href="/authors/{{page.github}}">
       <img class="portrait" src="{{page.cover_image}}"></a>
@@ -17,7 +16,7 @@ teamlabels:
         <a class="email-icon" href="mailto:{{page.email}}"></a>
         {% endif %}
         {% if page.github %}
-        <a class="github-icon" href="https://github.com/{{page.github}}"></a>
+        <a class="fa fa-github github-icon" href="https://github.com/{{page.github}}"></a>
         {% endif %}
         {% if page.homepage %}
         <a class="homepage-icon" href="{{page.homepage}}" target="_blank"></a>
@@ -28,7 +27,11 @@ teamlabels:
       </span>
       <p class="descrption">
         {% for team in page.teams %}
-        {{ layout.teamlabels[team]}}
+        {% for pTeam in site.teams %}
+        {% if team == pTeam.team %}
+        <a href="{{ site.base_url }}{{ pTeam.url }}">{{ layout.teamlabels[team]}}</a>
+        {% endif %}
+        {% endfor %}
         {% unless forloop.last %}/{% endunless %}
         {% endfor %}
       </p>
