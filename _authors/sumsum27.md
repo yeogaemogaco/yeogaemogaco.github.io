@@ -1,5 +1,5 @@
 ---
-name: 햇반
+title: 햇반
 github: sumsum27
 email: yeonju2500@gmail.com
 homepage: http://yeon27.tistory.com/

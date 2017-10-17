@@ -1,5 +1,5 @@
 ---
-name: 디벨로
+title: 디벨로
 github: suhyunjeon
 email: suhyunjun@gmail.com
 homepage: 

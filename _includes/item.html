@@ -13,9 +13,9 @@
         <a href="{{ site.baseurl }}/authors/{{ post.author }}">
             <div class="author-image"
                  {% if author.image %}style="background-image:url({{ author.image }});"{% endif %}>
-                <span class="sr-only">{{ author.name }}'s profile image</span>
+                <span class="sr-only">{{ author.title }}'s profile image</span>
             </div>
-            <p class="author-name">{{ author.name }}</p>
+            <p class="author-name">{{ author.title }}</p>
         </a>
         <p class="post-date">{{ post.date | date: '%Y-%m-%d' }}</p>
     </div>

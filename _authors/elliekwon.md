@@ -1,5 +1,5 @@
 ---
-name: 보댕
+title: 보댕
 github: elliekwon
 email: bkkwon656@gmail.com
 homepage: http://www.elliekwon.com

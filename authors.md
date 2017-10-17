@@ -7,5 +7,5 @@ sitemap:
 ---
 
 {% for author in site.authors %}
-* <img src="/images/profile/{{author.github}}.jpg" width="25px"> [{{ author.name }}]({{ site.baseurl }}/authors/{{ author.github }}/)
+* <img src="/images/profile/{{author.github}}.jpg" width="25px"> [{{ author.title }}]({{ site.baseurl }}/authors/{{ author.github }}/)
 {% endfor %}
