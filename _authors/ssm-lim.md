@@ -1,5 +1,5 @@
 ---
-name: 닉이
+title: 닉이
 github: ssm-lim
 email: ssmlimv@gmail.com
 homepage: http://ssmlim.tistory.com

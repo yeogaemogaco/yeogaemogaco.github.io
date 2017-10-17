@@ -1,5 +1,5 @@
 ---
-name: 모모무지모모
+title: 모모무지모모
 github: JJRomi
 email: jromi158@gmail.com
 homepage: https://jjromi.github.io/#blog

@@ -1,5 +1,5 @@
 ---
-name: 숨비
+title: 숨비
 github: bizuryu
 email: bizuryu0@gmail.com
 homepage: https://bizuryu.blogspot.kr/

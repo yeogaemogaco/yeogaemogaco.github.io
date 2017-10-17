@@ -1,5 +1,5 @@
 ---
-name: Kayla
+title: Kayla
 github: kaylais
 email: kaylabaek52@gmail.com
 homepage: https://kaylais.github.io

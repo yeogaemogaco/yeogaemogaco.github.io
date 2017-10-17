@@ -1,5 +1,5 @@
 ---
-name: thomasJ
+title: thomasJ
 github: gyoungeunbae
 email: nueola@gmail.com
 homepage: 

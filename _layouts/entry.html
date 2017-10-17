@@ -5,7 +5,7 @@ layout: default
 {% if page.author %}
 {% for author in site.authors %}
 {% if author.github == page.author.github %}
-{% assign authorName = author.name %}
+{% assign authorName = author.title %}
 {% break %}
 {% endif %}
 {% endfor %}

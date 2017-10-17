@@ -30,7 +30,7 @@ layout: null
   {% endfor %}
   {% for author in site.authors %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/authors/{{ author.name }}</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}/authors/{{ author.title }}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

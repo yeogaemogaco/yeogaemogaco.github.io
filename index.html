@@ -10,7 +10,7 @@ layout: default
           {% if post.author %}
           {% for author in site.authors %}
             {% if author.github == post.author.github %}
-              {% assign authorName = author.name %}
+              {% assign authorName = author.title %}
               {% break %}
             {% endif %}
           {% endfor %}
