@@ -2,7 +2,7 @@
 layout: entry
 category: notice
 publish: true
-title: [마감] 2기 입동팀 신청 공지
+title: "[마감] 2기 입동팀 신청 공지"
 description: 작고 구체적인 목표 계획을 작성하신 분들중에서 선착순으로 8명을 마감하였습니다.  
 author:
   github: kaylais
