@@ -62,8 +62,11 @@ Spring Framework, JPA, A-frame, Unity, AR/VR, Kotlin, Swift, Data Structure, Alg
 아직은 어색한 시간이지만 곧 많은 공감대가 형성되면서 수많은 아이디어가 나올 라 기대하고 있어요.  
 2개월이 짧지만 긴 시간이 될 수 있도록 만들어 볼게요.    
 
-그럼 입동팀, 우리 포기하지 말고 끝까지 함께 완주해요 :D
+그럼 입동팀, 우리 포기하지 말고 끝까지 함께 완주해요 :D  
 
+
+## 발표 자료
+<script async class="speakerdeck-embed" data-id="1bea9eb406a94d44947058f8eeb38c8d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 <br>
 <br>
