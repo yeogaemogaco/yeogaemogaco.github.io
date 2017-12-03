@@ -13,6 +13,8 @@ cover_image: /images/2017-12-03-5th-meetup/team-a-004.jpeg
 
 모두 기다리던(?!) **중간발표** 날입니다!
 
+간식은 숨비님께서 가져오신, 어제 여개모 송년회의 쿠키:cookie:
+
 오늘 전 결혼식이 있어 간만에 차려입고 온지라...:computer:노트북:computer: 대신 :notebook:노트:notebook:를 들고 참석했습니다ㅎㅎ
 
 또 회고 담당이어서 간만에 미친듯이 필기를...:pencil2:
