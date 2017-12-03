@@ -6,10 +6,10 @@ title: "2기 입동팀 다섯 번째 모임 후기"
 description: "여개모각코 중간발표"
 author:
   github: yuda110
-cover_image: /images/2017-12-03-5th-meetup/team-a-004.jpeg
+cover_image: /images/2017-12-03-5th-meetup-b/team-a-004.jpeg
 ---
 
-![중간발표의 현장](/images/2017-12-03-5th-meetup/2.jpg)
+![중간발표의 현장](/images/2017-12-03-5th-meetup-b/2.jpg)
 모두 기다리던(?!) **중간발표** 날입니다!
 
 간식은 숨비님께서 가져오신, 어제 여개모 송년회의 쿠키🍪
@@ -28,7 +28,7 @@ cover_image: /images/2017-12-03-5th-meetup/team-a-004.jpeg
 
 앞으로는 위치나 음식점 종류 등 어떤 타입을 기반으로 하는지에 따라 API를 구분하여 가져오고, 그 장소가 맞는지 확인하게 한 뒤 맛집을 추천하는 식으로 개발하신다고 합니다. 저도 몇 개월 전에 API.AI를 잠깐 써본지라 어떤 챗봇이 나올지 궁금하네욥! 
 
-![irodong님 중간발표 중](/images/2017-12-03-5th-meetup/3.jpg)
+![irodong님 중간발표 중](/images/2017-12-03-5th-meetup-b/3.jpg)
 #### 👩[irodong](/authors/godori)👩
 	electron으로 스크린 레코딩 데스크탑 앱 만들기
 
@@ -50,7 +50,7 @@ irodong님의 1개월 차 목표는 스크린 캡처를 하는 electron 앱을 �
 
 2개월 차에는 Django Rest Framework로 로그인, 회원가입, 일기 저장/업데이트/삭제 등 필요한 API들을 만들고 웹쪽에서 ajax로 가져올 수 있게 하려고요.
 
-![니모님 중간발표 중](/images/2017-12-03-5th-meetup/4.jpg)
+![니모님 중간발표 중](/images/2017-12-03-5th-meetup-b/4.jpg)
 #### 👩[니모](/authors/jy617lee)👩
 	코틀린으로 1초 기록 카메라 앱 만들기
 
