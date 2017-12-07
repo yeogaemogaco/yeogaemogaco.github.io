@@ -2,7 +2,7 @@
 layout: entry
 category: blog
 publish: true
-title: "2기 입동팀 다섯 번째 모임 후기"
+title: "2기 입동팀 다섯 번째 모임 후기 - B팀"
 description: "여개모각코 중간발표"
 author:
   github: yuda110
