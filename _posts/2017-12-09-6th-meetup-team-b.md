@@ -5,7 +5,7 @@ publish: true
 title: "2기 입동팀 여섯 번째 모임 후기 - B팀"
 description: "여개모각코 중간발표"
 author:
-  github: jeeyun617
+  github: jy617lee
 cover_image: /images/2017-12-09-6th-meetup-b/group.jpeg
 ---
 
